@@ -1,9 +1,16 @@
 # COMP-3040 API Specifications Assignment
 
+## MB Parks API
 
-## Response
+MB Parks is a free API that will provide detailed information on campsites in parks based on specified **size**, **availability**, and **electricity** of the site. The API will gather campsites around Manitoba that match the desired specifications and respond with the list containing further details about each individual site.
+
+Please check the documentation below to see how to implement the MB Parks API.
+
+## Sample Request
 
 `GET http://www.mbparks.com/campsites?size=large&available=true&electrical=true`
+
+## Sample Response
 
 ```json
 {
