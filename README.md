@@ -8,22 +8,20 @@ Please check the documentation below to see how to implement the MB Parks API.
 
 ## Parameters and Endpoints
 `GET  http://www.mbparks.com/campsites`
-Returns a list of camp sites in Manitoba
+Returns a list of camp sites in Manitoba that match the given query parameters (see below).
 
 ### Parameters
-*  park name (string): Full name of the park. Optional.
-* bay name (string): Full name of the bay the park is nearest to, if applicable. Optional
-* lot number (int): Number of the particular lot in the park, if applicable. Optional.
+* park_name (string): Full name of the park. Optional.
+* bay_name (string): Full name of the bay the park is nearest to, if applicable. Optional
+* lot_number (int): Number of the particular lot in the park, if applicable. Optional.
 * availability (boolean): Availability of the lot number specified and in the park specified, if applicable. Optional.
-* tree coverage (string): Description of tree coverage for a particular lot number, if applicable. Optional.
+* tree_coverage (string): Description of tree coverage for a particular lot number, if applicable. Optional.
 * size (string): Size of the particular lot chosen, if applicable. Optional.
 * electrical (boolean): Availablity of electrical outlets in the particular lot specified, if applicable. Optional.
 
-## Sample Request
+## Sample Request & Response
 
 `GET http://www.mbparks.com/campsites?size=large&available=true&electrical=true`
-
-## Sample Response
 
 ```json
 {
