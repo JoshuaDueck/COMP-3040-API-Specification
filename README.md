@@ -6,6 +6,28 @@ MB Parks is a free API that will provide detailed information on campsites in pa
 
 Please check the documentation below to see how to implement the MB Parks API.
 
+## Parameters and Endpoints
+`GET  http://www.mbparks.com/campsites?park_name/`
+
+Returns a list of parks in Manitoba
+### Requirements 
+* None, pinging this endpoint alone returns a full list of all parks in Manitoba.
+### Parameters
+*  park name (string): Full name of the park. 
+* bay name (string): Full name of the bay the park is nearest to, if applicable. Optional
+
+`Get http://www.mbparks.com/campsites?park_name/lot_number`
+
+Returns lot information based on specified lot number and park name.
+### Requirements
+* park name (string): Full name of the park. 
+* lot number (int): Number of the particular lot in the park, if applicable. Optional.
+### Parameters
+* availability (boolean): Availability of the lot number specified and in the park specified, if applicable. Optional.
+* tree coverage (string): Description of tree coverage for a particular lot number, if applicable. Optional.
+* size (string): Size of the particular lot chosen, if applicable. Optional.
+* electrical (boolean): Availablity of electrical outlets in the particular lot specified, if applicable. Optional.
+
 ## Sample Request
 
 `GET http://www.mbparks.com/campsites?size=large&available=true&electrical=true`
