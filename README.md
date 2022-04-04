@@ -19,6 +19,24 @@ Returns a list of camp sites in Manitoba that match the given query parameters (
 * size (string): Size of the particular lot chosen, if applicable. Optional.
 * electrical (boolean): Availablity of electrical outlets in the particular lot specified, if applicable. Optional.
 
+## Resources
+
+```json
+{
+"resources": [
+		{
+			"endpoint": "http://www.mbparks.com/campsites",
+			"returns": "a list of camp sites in Manitoba"
+		},
+		{
+			"endpoint": "http://www.mbparks.com/campsites?size=large&available=true&electrical=true",
+			"returns": "a list of large available camp sites in Manitoba with electricity"
+		}
+	],
+	"status": "OK"
+}
+```
+
 ## Sample Request & Response
 
 `GET http://www.mbparks.com/campsites?size=large&available=true&electrical=true`
