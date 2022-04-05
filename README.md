@@ -2,9 +2,19 @@
 
 ## MB Parks API
 
-MB Parks is a free API that will provide detailed information on campsites in parks based on specified **size**, **availability**, and **electrical offerings** of the site. The API will gather campsites around Manitoba that match the desired specifications and respond with the list containing further details about each individual site.
+MB Parks is a free API that will provide detailed information on Manitoba parks, and provides a simple way to query campsites in Manitoba parks based on specified **size**, **availability**, **tree coverage** and **electrical offerings** of the site. The API will gather campsites around Manitoba that match the desired specifications and respond with the list containing further details about each individual site.
 
 Please refer to the documentation below to see how to implement the MB Parks API.
+
+### Endpoints
+`http://www.mbparks.com/campsites`
+* Returns a list of campsites in Manitoba that match the given query parameters (see below).
+
+### Parameters
+* `availability` (boolean): Availability of the lot number specified and in the park specified, if applicable. Optional.
+* `tree_coverage` (string): Description of tree coverage for a particular lot number, if applicable. Optional.
+* `size` (string): Size of the particular lot chosen, if applicable. Optional.
+* `electrical` (boolean): Availablity of electrical outlets in the particular lot specified, if applicable. Optional.
 
 ### Resources
 
@@ -14,7 +24,6 @@ Please refer to the documentation below to see how to implement the MB Parks API
     "results": "A list of campsite objects."
 }
 ```
-
 
 #### Campsite
 ```json
@@ -28,19 +37,6 @@ Please refer to the documentation below to see how to implement the MB Parks API
     "electrical": "A boolean value representing whether the lot has electrical outlets."
 }
 ```
-
-## Endpoints & Parameters
-`GET  http://www.mbparks.com/campsites`
-Returns a list of campsites in Manitoba that match the given query parameters (see below).
-
-### Parameters
-* park_name (string): Full name of the park. Optional.
-* bay_name (string): Full name of the bay the park is nearest to, if applicable. Optional
-* lot_number (int): Number of the particular lot in the park, if applicable. Optional.
-* availability (boolean): Availability of the lot number specified and in the park specified, if applicable. Optional.
-* tree_coverage (string): Description of tree coverage for a particular lot number, if applicable. Optional.
-* size (string): Size of the particular lot chosen, if applicable. Optional.
-* electrical (boolean): Availablity of electrical outlets in the particular lot specified, if applicable. Optional.
 
 ## Sample Request & Response
 
