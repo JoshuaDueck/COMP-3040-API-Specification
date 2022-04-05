@@ -2,11 +2,11 @@
 
 ## MB Parks API
 
-MB Parks is a free API that will provide detailed information on campsites in parks based on specified **size**, **availability**, and **electricity** of the site. The API will gather campsites around Manitoba that match the desired specifications and respond with the list containing further details about each individual site.
+MB Parks is a free API that will provide detailed information on campsites in parks based on specified **size**, **availability**, and **electrical offerings** of the site. The API will gather campsites around Manitoba that match the desired specifications and respond with the list containing further details about each individual site.
 
-Please check the documentation below to see how to implement the MB Parks API.
+Please refer to the documentation below to see how to implement the MB Parks API.
 
-## Parameters and Endpoints
+## Endpoints & Parameters
 `GET  http://www.mbparks.com/campsites`
 Returns a list of campsites in Manitoba that match the given query parameters (see below).
 
