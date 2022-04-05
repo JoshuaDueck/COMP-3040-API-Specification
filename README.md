@@ -8,7 +8,7 @@ Please check the documentation below to see how to implement the MB Parks API.
 
 ## Parameters and Endpoints
 `GET  http://www.mbparks.com/campsites`
-Returns a list of camp sites in Manitoba that match the given query parameters (see below).
+Returns a list of campsites in Manitoba that match the given query parameters (see below).
 
 ### Parameters
 * park_name (string): Full name of the park. Optional.
@@ -84,3 +84,11 @@ Returns a list of camp sites in Manitoba that match the given query parameters (
 	"status": "OK"
 }
 ```
+
+## Authors
+
+- Arjun Kaushal
+- Braden Jonsson
+- Winson Lam
+- Joshua Dueck
+- Anas Ashfaq Mehar
